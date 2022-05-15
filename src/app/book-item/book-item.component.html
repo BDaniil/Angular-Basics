@@ -1,0 +1,17 @@
+<div class="more-info">
+    <button class="more-info-button"  (click)="displayMore()">Show More Info about Books</button>
+</div>
+<div class="item-wrapper">
+    <div class="void-item" *ngIf="!books.length">
+        <h1 class="headline">
+            No books with entered title
+        </h1>
+    </div>
+    <div class="item" *ngFor="let item of books">
+        <img src="{{item.image}}" alt="">
+        <p class="title"> Title: {{item.title}} </p>
+        <p class="author"> Author: {{item.author}} </p>
+        <p [ngClass]="flag ? 'disabled' : 'summary'">Summary: {{item.summary}}</p>
+        <p class="price"> Price: {{item.price.displayValue | currency:item.price.currency}}</p>
+    </div>
+</div>

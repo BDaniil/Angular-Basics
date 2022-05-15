@@ -1,0 +1,89 @@
+.more-info{
+    margin: 2rem;
+    display: flex;
+    justify-content: flex-start;
+
+    .more-info-button{
+        padding: 1rem;
+        background-color: rgb(196, 169, 120);
+        border: 1px solid transparent;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 1rem;
+        position: fixed;
+        transition: all 1s ease;
+
+        &:active{
+            top:10.4rem
+        }
+
+        &:hover{
+            background-color: rgb(225, 196, 144);
+            color: rgb(121, 118, 118);
+        }
+    }
+}
+.item-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .void-item{
+        height: 86.4vh;
+
+        .headline{
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 1rem;
+        }
+    }
+    
+    .item{
+        background-color: rgb(234, 233, 219);
+        padding: 1rem;
+        border-radius: 1rem;
+        height: fit-content;
+        margin: 2rem 2rem 2rem 2rem;
+        max-width: 20rem;
+
+        img{
+            width: 20rem;
+            height: 30rem;
+        }
+
+        .title{
+            display: flex;
+            justify-content: flex-start;
+            margin: 0.5rem;
+            font-size: larger;
+        }
+
+        .author{
+            display: flex;
+            justify-content: flex-start;
+            margin: 0.5rem;
+            font-size: larger;
+        }
+
+        .summary{
+            display: flex;
+            justify-content: flex-start;
+            margin: 0.5rem;
+            font-size: medium;
+        }
+
+        .price{
+            display: flex;
+            justify-content: flex-start;
+            margin: 0.5rem;
+            font-size: larger;
+ 
+        }
+    }
+}
+
+.disabled{
+    display: none;
+}

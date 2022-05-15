@@ -1,0 +1,38 @@
+.header-container{
+    height: fit-content;
+    background-color: wheat;
+
+    .navbar{
+        background-color: rgb(196, 169, 120);
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .headline{
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 1rem;
+        }
+
+        .search-book-container{
+            display: flex;
+            justify-content: center;
+
+            .search-book{
+                width: 50%;
+                padding: 0.5rem;
+                color: black;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 0.3rem;
+                border: 1px solid black;
+                text-align: center;
+                outline: 0;
+                outline-offset: 0;
+            }
+        }
+    }
+}
